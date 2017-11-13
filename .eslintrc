@@ -1,0 +1,31 @@
+{
+  "extends": [
+    "airbnb-base",
+    "plugin:import/errors",
+    "plugin:import/warnings"
+  ],
+  "plugins": [
+    "no-loops"
+  ],
+  "env":{
+    "browser": true,
+    "node": true,
+    "es6": true
+  },
+  "rules": {
+    "indent": [2, 2],
+    "func-names": [ 2, "never" ],
+    "no-shadow": [ 2, { "allow": ["error", "err", "response", "resolve", "reject"] } ],
+    "quotes": [ 2, "double" ],
+    "no-case-declarations": 0,
+    "no-plusplus": [ 2, { "allowForLoopAfterthoughts": true } ],
+    "max-len": [ 1, 120, 2, { "ignoreComments": true } ],
+    "no-param-reassign": 0,
+    "comma-dangle": 0,
+    "radix": 0,
+    "no-loops/no-loops": 1,
+    "no-prototype-builtins": 0,
+    "no-multi-spaces": [2, { "exceptions": { "VariableDeclarator": true } }],
+    "import/no-extraneous-dependencies": [2, {"devDependencies": true}]
+  }
+}

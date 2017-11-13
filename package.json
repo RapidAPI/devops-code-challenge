@@ -1,0 +1,50 @@
+{
+  "name": "devops-code-challenge",
+  "version": "1.0.0",
+  "description": "Base seed project for NodeJS services",
+  "main": "index.js",
+  "repository": "https://github.com/RapidAPI/devops-code-challenge.git",
+  "scripts": {
+    "start": "node .",
+    "precommit": "lint-staged",
+    "lint": "eslint ./ --cache",
+    "lintfix": "eslint ./ --fix",
+    "test": "./node_modules/mocha/bin/mocha --recursive"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "pre-commit": "precommit",
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@newrelic/native-metrics": "2.1.1",
+    "body-parser": "1.17.2",
+    "chai": "4.0.2",
+    "chai-http": "3.0.0",
+    "cluster": "^0.7.7",
+    "compression": "^1.7.0",
+    "config": "1.26.1",
+    "express": "4.15.3",
+    "fs": "^0.0.1-security",
+    "joi": "^10.6.0",
+    "jsdoc": "3.4.3",
+    "mocha": "3.4.2",
+    "newrelic": "1.40.0",
+    "os": "^0.1.1",
+    "winston": "2.3.1",
+    "winston-logstash": "0.3.0",
+    "winston-meta-wrapper": "1.2.0"
+  },
+  "devDependencies": {
+    "eslint": "4.0.0",
+    "eslint-config-airbnb-base": "11.2.0",
+    "eslint-plugin-import": "2.3.0",
+    "eslint-plugin-no-loops": "0.3.0",
+    "lint-staged": "3.6.1",
+    "pre-commit": "1.2.2"
+  }
+}

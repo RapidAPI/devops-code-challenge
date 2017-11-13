@@ -1,0 +1,4 @@
+## Ignore these files ##
+node_modules/*
+temp/*
+.idea/*
