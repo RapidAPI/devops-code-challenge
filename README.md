@@ -1,6 +1,6 @@
-### AWS Automation and service deployment
+# AWS Automation and service deployment
 
-# Automate the following tasks using Ansible:
+### Automate the following tasks using Ansible:
 
 ### Task 1: Automate the EC2 instance creation under load balancer.
 
