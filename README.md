@@ -17,6 +17,12 @@ Your mission if you choose to accept it -
 
 ### Task 2: deploy a service to the EC2 instance.
 
-1. Use the  git repository above (which is a Node.js service - One of RapidAPI microservices) and deploy it to the instance (How would you choose to run it under Linux Centos 7?)
+1. Use the  git repository above (which is a Node.js service - One of RapidAPI microservices ) and deploy it to the instance (How would you choose to run it under Linux Centos 7?)
+- Please notice that in order to run the service you need to run 
+```javascript
+yarn install
+node .
+```
+
 
 Had fun solving it? Please send us the solution as zip file.
